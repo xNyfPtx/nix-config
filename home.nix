@@ -72,7 +72,7 @@
   programs.git = {
     enable = true;
     userName = "xNyfPtx";
-    userEmail = "55147963+xNyfPtx@users.noreply.github.com";
+    userEmail = "155147963+xNyfPtx@users.noreply.github.com";
   };
 
   programs.bash = {
@@ -82,16 +82,6 @@
     bashrcExtra = ''
       export PATH="$PATH:$HOME/bin:$HOME/.local/bin:$HOME/go/bin"
     '';
-
-    # set some aliases, feel free to add more or remove some
-    shellAliases = {
-      l = "ls";
-      c = "cd";
-      r = "rm";
-      rms = "shred";
-      shred = "shred -n 32 -f -u -v -z";
-      m = "mkdir";
-    };
   };
 
   programs.firefox = {
