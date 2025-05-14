@@ -12,3 +12,6 @@ rollback:
 
 unrollback:
   git checkout main
+
+update:
+  nix flake update
