@@ -1,5 +1,5 @@
 build:
-  sudo nixos-rebuild switch --flake #.host
+  sudo nixos-rebuild switch --flake .#host
 
 deploy:
   sudo nixos-rebuild switch --flake .#host && git add . && git commit -m "commit" && git push 
