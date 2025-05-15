@@ -10,22 +10,12 @@
       ./bootloader.nix
       ./hardware-configuration.nix
       ./keyd.nix
+      ./nix.nix
       ./ollama.nix
     ];
 
 
 
-  nix = {
-    gc = {
-      automatic = true;
-      dates = "weekly";
-      options = "--delete-older-than 1w";
-    };
-    settings = {
-      auto-optimise-store = true;
-      experimental-features = ["nix-command" "flakes"];
-    };
-  };
 
  
   networking.hostName = "host"; # Define your hostname.
