@@ -99,6 +99,19 @@
     };
   };
   policies = {
+    Cookies = {
+      "Allow" = [
+        "https://addy.io"
+        "https://element.io"
+	"https://discord.com"
+	"https://facebook.com"
+        "https://frontendmentor.io"
+        "https://github.com"
+	"https://mastodon.social"
+	"https://proton.me"
+      ];
+      "Locked" = true;
+    };
     DisableTelemetry = true;
     DisableFirefoxStudies = true;
     FirefoxHome = {
