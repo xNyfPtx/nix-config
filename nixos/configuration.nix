@@ -7,6 +7,7 @@
 {
   imports =
     [ # Include the results of the hardware scan.
+      ./bootloader.nix
       ./hardware-configuration.nix
       ./keyd.nix
       ./ollama.nix
