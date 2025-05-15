@@ -7,9 +7,9 @@
 {
   imports =
     [ # Include the results of the hardware scan.
-      ./hardware-configuration.nix
-      ./keyd.nix
-      ./ollama.nix
+      ./nixos/hardware-configuration.nix
+      ./nixos/keyd.nix
+      ./nixos/ollama.nix
     ];
 
   boot.loader = {
