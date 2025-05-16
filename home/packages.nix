@@ -34,6 +34,7 @@
     pwgen
     ripgrep
     sass
+    songrec
     simplex-chat-desktop
     thefuck
     tor-browser
