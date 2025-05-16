@@ -32,6 +32,7 @@
     ponysay
     protonvpn-gui
     pwgen
+    qbittorrent
     ripgrep
     sass
     songrec
@@ -42,6 +43,7 @@
     ungoogled-chromium
     unzip
     virtualbox
+    vlc
     wezterm
     yarn
     yt-dlp
