@@ -48,7 +48,7 @@
         "places.history.enabled" = "false";
         "privacy.resistFingerprinting" = true;
         "privacy.resistFingerprinting.autoDeclineNoUserInputCanvasPrompts" = true;
-        "privacy.resistFingerprinting.exemptedDomains" = "images.google.com";
+	"privacy.resistFingerprinting.exemptedDomains" = ["images.google.com"];
       };
       ExtensionSettings = {
         # LibRedirect
