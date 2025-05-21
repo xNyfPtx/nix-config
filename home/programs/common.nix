@@ -1,0 +1,57 @@
+{ config, pkgs, ... }:
+{
+  home.packages = with pkgs; [
+    anki
+    bunnyfetch
+    calibre
+    cava
+    cbonsai
+    cmatrix
+    cowsay
+    dunst
+    ente-auth
+    eyedropper
+    fastfetch
+    ffmpeg
+    figlet
+    gh
+    git
+    gitea
+    hyfetch
+    hyprland
+    just
+    lolcat
+    mat2
+    motrix
+    mullvad-browser
+    neofetch
+    neovim
+    nitch
+    nodejs_23
+    ollama
+    pfetch
+    pipewire
+    pnpm_10
+    ponysay
+    protonvpn-gui
+    pwgen
+    qbittorrent
+    ripgrep
+    sass
+    songrec
+    simplex-chat-desktop
+    thefuck
+    tor-browser
+    tty-clock
+    ungoogled-chromium
+    unzip
+    virtualbox
+    vlc
+    waydroid
+    wezterm
+    wireplumber
+    yarn
+    yt-dlp
+  ];
+  programs.kitty.enable = true;
+}
