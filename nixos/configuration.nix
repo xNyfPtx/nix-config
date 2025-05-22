@@ -7,9 +7,7 @@
 {
   imports =
     [
-      ./bootloader.nix
       ./hardware-configuration.nix
-      ./nix.nix
       ./services
     ];
 
@@ -37,6 +35,26 @@
       LC_PAPER = "en_US.UTF-8";
       LC_TELEPHONE = "en_US.UTF-8";
       LC_TIME = "en_US.UTF-8";
+    };
+  };
+
+  boot.loader = {
+   systemd-boot = {
+     enable = true;
+     configurationLimit = 10;
+   };
+   efi.canTouchEfiVariables = true;
+  };
+
+  nix = {
+    gc = {
+      automatic = true;
+      dates = "weekly";
+      options = "--delete-older-than 1w";
+    };
+    settings = {
+      auto-optimise-store = true;
+      experimental-features = ["nix-command" "flakes"];
     };
   };
 
