@@ -101,7 +101,7 @@
 	  (redirect "reddit.com" "red.ngn.tf")
 	  (redirect "stackoverflow.com" "code.whatever.social")
 	  (redirect "twitter.com" "nitter.net")
-	  (redirect "wikipedia.com" "wiki.froth.zone")
+	  (redirect "wikipedia.org" "wiki.froth.zone")
 	  (redirect "x.com" "nitter.net")
 	  (redirect "youtube.com" "inv.nadeko.net")
       ];
