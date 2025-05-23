@@ -12,6 +12,7 @@
 	  "https://facebook.com"
           "https://frontendmentor.io"
           "https://github.com"
+	  "https://lemmy.cafe"
 	  "https://mastodon.social"
 	  "https://proton.me"
         ];
