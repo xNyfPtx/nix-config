@@ -9,6 +9,11 @@ commit files commitMessage:
   git add {{files}}
   git commit -m "{{commitMessage}}"
 
+push files commitMessage:
+  git add {{files}}
+  git commit -m "{{commitMessage}}"
+  git push
+
 deploy files commitMessage:
   sudo nixos-rebuild switch --flake .#host  --show-trace --print-build-logs --verbose
   git add {{files}}
