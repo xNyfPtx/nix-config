@@ -1,19 +1,18 @@
 build:
   sudo nixos-rebuild switch --flake .#host --show-trace --print-build-logs --verbose
 
-commit:
-  git add .
-  git commit -m "commit"
+branch branchName: 
+  git branch {{branchName}}
+  git switch {{branchName}}
 
-deploy:
+commit files commitMessage:
+  git add {{files}}
+  git commit -m "{{commitMessage}}"
+
+deploy files commitMessage:
   sudo nixos-rebuild switch --flake .#host  --show-trace --print-build-logs --verbose
-  git add .
-  git commit -m "commit"
-  git push
-
-push:
-  git add .
-  git commit -m "commit"
+  git add {{files}}
+  git commit -m "{{commitMessage}}"
   git push
 
 update:
