@@ -27,11 +27,11 @@
     neofetch
     neovim
     nitch
-    nodejs_23
+    nodejs_24
     ollama
     pfetch
     pipewire
-    pnpm_10
+    pnpm_9
     ponysay
     protonvpn-gui
     pwgen
