@@ -17,12 +17,12 @@
     gh
     git
     gitea
+    gopeed
     hyfetch
     hyprland
     just
     lolcat
     mat2
-    motrix
     mullvad-browser
     neofetch
     neovim
