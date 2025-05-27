@@ -53,7 +53,7 @@
       FirefoxHome = {
         "Search" = false;
       };
-      HardwareAcceleration = false;
+      HardwareAcceleration = true;
       Preferences = {
         "browser.preferences.defaultPerformanceSettings.enabled" = false;
         "browser.startup.homepage" = "about:home";
@@ -66,7 +66,6 @@
         "browser.urlbar.suggest.topsites" = false;
 	"browser.warnOnQuit" = false;
         "browser.warnOnQuitShortcut" = false;
-      # "layers.acceleration.disabled"  = true; # fuck fingerprinting
         "places.history.enabled" = "false";
         "privacy.resistFingerprinting" = true;
         "privacy.resistFingerprinting.autoDeclineNoUserInputCanvasPrompts" = true;
