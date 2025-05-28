@@ -36,7 +36,7 @@
 	  # nix-shell -p python3 --run "python3 build.py"
 	  # There will a be a folder named `build`. Inside it is the extension files, the one I used is `redirector-firefox.xpi` because I use Firefox.
 	  # Note that since you built the extension manually, it will be quite suspicious to Firefox as it has no signature. THIS IS NORMAL!
-          install_url = "file:///home/user/nix-config/dotfiles/librewolf/redirector-firefox.xpi";
+          install_url = "file:///home/user/nix-config/home/librewolf/redirector-firefox.xpi";
           installation_mode = "force_installed";
         };
         # Tridactyl

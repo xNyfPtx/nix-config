@@ -1,9 +1,12 @@
 { config, pkgs, ... }:
-
 {
   imports = [
-    ./programs
-    ./shell
+    ./bash.nix
+    ./common.nix
+    ../dotfiles
+    ./git.nix
+    ./gnome.nix
+    ./librewolf
   ];
 
   home = {
@@ -11,7 +14,6 @@
     homeDirectory = "/home/user";
     stateVersion = "25.05";
   };
-
 
   programs.home-manager.enable = true;
 }
