@@ -58,6 +58,7 @@
         "browser.preferences.defaultPerformanceSettings.enabled" = false;
         "browser.startup.homepage" = "about:home";
         "browser.toolbar.bookmarks.visibility" = "newtab";
+        "browser.toolbars.bookmarks.visibility" = "newtab";
         "browser.urlbar.suggest.bookmark" = false;
         "browser.urlbar.suggest.engines" = false;
         "browser.urlbar.suggest.history" = false;
