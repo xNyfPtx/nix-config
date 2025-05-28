@@ -29,17 +29,9 @@ config.skip_close_confirmation_for_processes_named = {
 
 local catpuccin_colors =  {
   text = "#cdd6f4",
-  subtext1 = "#bac2de",
-  subtext0 = "#a6adc8",
-  overlay2 = "#9399b2",
-  overlay1 = "#7f849c",
-  overlay0 = "#6c7086",
-  surface2 = "#585b70",
   surface1 = "#45475a",
   surface0 = "#313244",
   base = "#1e1d2d",
-  mantle = "#181825",
-  crust  = '#11111b'
 }
 
 config.colors = {
