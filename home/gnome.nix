@@ -19,6 +19,8 @@
 
     "org/gnome/settings-daemon/plugins/color" = {
       night-light-enabled = true;
+      night-light-schedule-to = 0.0;
+      night-light-schedule-from = 0.0;
     };
   };
 }
