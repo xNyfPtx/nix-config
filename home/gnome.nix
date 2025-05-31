@@ -17,8 +17,8 @@
     };
 
     "org/gnome/desktop/screensaver" = {
-      picture-uri = "file:///run/current-system/sw/share/backgrounds/gnome/blobs-l.svg";
-      primary-color = "#e18477";
+      picture-uri = "file:///run/current-system/sw/share/backgrounds/gnome/drool-l.svg";
+      primary-color = "#86b6ef";
     };
 
     "org/gnome/desktop/session" = {
@@ -70,7 +70,7 @@
       last-selected-power-profile = "performance";
     };
 
-    "org/gnome/shell/extensions/just-perfection/" = {
+    "org/gnome/shell/extensions/just-perfection" = {
       support-notifier-type = 0;
     };
   };
