@@ -8,7 +8,6 @@
     cbonsai
     cmatrix
     cowsay
-    dunst
     ente-auth
     eyedropper
     fastfetch
@@ -30,7 +29,6 @@
     nodejs_24
     ollama
     pfetch
-    pipewire
     pnpm_9
     ponysay
     protonvpn-gui
@@ -49,7 +47,6 @@
     vlc
     waydroid
     wezterm
-    wireplumber
     yarn
     yt-dlp
   ];
