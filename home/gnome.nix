@@ -16,11 +16,6 @@
       remember-recent-files = false;
     };
 
-    "org/gnome/desktop/screensaver" = {
-      picture-uri = "file:///run/current-system/sw/share/backgrounds/gnome/drool-l.svg";
-      primary-color = "#86b6ef";
-    };
-
     "org/gnome/desktop/session" = {
       idle-delay = lib.hm.gvariant.mkUint32 0;
     };
