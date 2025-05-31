@@ -2,6 +2,7 @@
 {
   dconf.settings = {
     "org/gnome/desktop/interface" = {
+      enable-animations = true;
       color-scheme = "prefer-dark";
       clock-show-weekday = true;
       show-battery-percentage = true;
@@ -13,6 +14,11 @@
 
     "org/gnome/desktop/privacy" = {
       remember-recent-files = false;
+    };
+
+    "org/gnome/desktop/screensaver" = {
+      picture-uri = "file:///run/current-system/sw/share/backgrounds/gnome/blobs-l.svg";
+      primary-color = "#e18477";
     };
 
     "org/gnome/desktop/session" = {
@@ -57,7 +63,15 @@
     };
 
     "org/gnome/shell" = {
+      enabled-extensions = [
+        "just-perfection-desktop@just-perfection"
+        "blur-my-shell@aunetx"
+      ];
       last-selected-power-profile = "performance";
+    };
+
+    "org/gnome/shell/extensions/just-perfection/" = {
+      support-notifier-type = 0;
     };
   };
 }
