@@ -65,6 +65,15 @@
         "privacy.resistFingerprinting.autoDeclineNoUserInputCanvasPrompts" = true;
 	"privacy.resistFingerprinting.exemptedDomains" = ["images.google.com"];
       };
+      SearchEngines = {
+        Add = [
+	  {
+	    Name = "DuckDuckGo HTML";
+	    URLTemplate = "https://html.duckduckgo.com/html?q=test";
+	  };
+	];
+	Default =  "DuckDuckGo HTML"
+      };
     };
   };
 }
