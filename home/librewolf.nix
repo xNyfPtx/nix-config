@@ -2,7 +2,7 @@
 {
   programs.firefox = {
     enable = true;
-    package = pkgs.librewolf;
+    package = pkgs.firefox;
     policies = {
       Cookies = {
         "Allow" = [
@@ -70,9 +70,9 @@
 	  {
 	    Name = "DuckDuckGo HTML";
 	    URLTemplate = "https://html.duckduckgo.com/html?q=test";
-	  };
+	  }
 	];
-	Default =  "DuckDuckGo HTML"
+	Default =  "DuckDuckGo HTML";
       };
     };
   };
