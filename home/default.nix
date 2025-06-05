@@ -6,7 +6,7 @@
     ../dotfiles
     ./git.nix
     ./gnome.nix
-    ./librewolf
+    ./librewolf.nix
   ];
 
   home = {
