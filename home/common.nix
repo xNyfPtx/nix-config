@@ -36,6 +36,7 @@
     qbittorrent
     ripgrep
     sass
+    smassh
     songrec
     simplex-chat-desktop
     thefuck
