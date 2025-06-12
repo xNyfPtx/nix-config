@@ -22,3 +22,6 @@ deploy files commitMessage:
 
 update:
   nix flake update
+  git add flake.lock
+  git commit -m "Update flake.lock"
+  sudo nixos-rebuild --switch --flake .#host --show-trace --print-build-logs --verbose
