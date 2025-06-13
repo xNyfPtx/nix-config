@@ -11,6 +11,7 @@
     ente-auth
     eyedropper
     fastfetch
+    fd
     ffmpeg
     figlet
     gh
