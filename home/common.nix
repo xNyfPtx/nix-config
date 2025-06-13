@@ -21,7 +21,7 @@
     hyprland
     just
     lolcat
-    lua
+    lua51Packages.lua
     lua54Packages.luarocks
     mat2
     mullvad-browser
