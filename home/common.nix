@@ -21,6 +21,7 @@
     hyprland
     just
     lolcat
+    lua54Packages.luarocks
     mat2
     mullvad-browser
     neofetch
