@@ -17,6 +17,7 @@
     gh
     git
     gitea
+    gnome-boxes
     gopeed
     hyfetch
     hyprland
