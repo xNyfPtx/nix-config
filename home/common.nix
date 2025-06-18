@@ -33,6 +33,7 @@
     nodejs_24
     ollama
     pfetch
+    pinta
     pnpm_9
     ponysay
     protonvpn-gui
@@ -40,6 +41,7 @@
     qbittorrent
     ripgrep
     sass
+    simplescreenrecorder
     smassh
     songrec
     simplex-chat-desktop
