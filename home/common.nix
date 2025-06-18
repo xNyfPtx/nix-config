@@ -52,6 +52,7 @@
     virtualbox
     vlc
     waydroid
+    wayfarer
     wezterm
     yarn
     yt-dlp
