@@ -41,7 +41,6 @@
     qbittorrent
     ripgrep
     sass
-    simplescreenrecorder
     smassh
     songrec
     simplex-chat-desktop
