@@ -21,6 +21,7 @@
     gopeed
     hyfetch
     hyprland
+		imagemagick
     just
     lolcat
     lua51Packages.lua
