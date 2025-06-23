@@ -23,6 +23,7 @@
     hyprland
 		imagemagick
     just
+		lazygit
     lolcat
     lua51Packages.lua
     lua54Packages.luarocks
