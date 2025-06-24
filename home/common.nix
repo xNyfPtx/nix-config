@@ -30,7 +30,6 @@
     mat2
     mullvad-browser
     neofetch
-    neovim
     nitch
     nodejs_24
     ollama
