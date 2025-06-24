@@ -15,6 +15,10 @@ map("n", "<C-k>", "<C-w>k", { desc = "switch window up" })
 
 map("n", "<C-s>", "<cmd>w<CR>", { desc = "general save file" })
 
+map("t", "<C-x>", "<C-\\><C-N>", { desc = "terminal escape terminal mode" })
+
+
+
 -- nvim-telescope/telescope.nvim
 map("n", "<leader>ff", "<cmd>Telescope find_files<CR>")
 map("n", "<leader>fw", "<cmd>Telescope live_grep<CR>")
