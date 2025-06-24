@@ -7,6 +7,7 @@
     ./git.nix
     ./gnome.nix
     ./librewolf.nix
+		./neovim.nix
   ];
 
   home = {
