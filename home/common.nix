@@ -46,11 +46,11 @@
     smassh
     songrec
     simplex-chat-desktop
-    thefuck
     tor-browser
     tty-clock
     ungoogled-chromium
     unzip
+		ueberzugpp
     virtualbox
     vlc
     waydroid
