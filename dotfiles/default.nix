@@ -1,4 +1,5 @@
-{ config, pkgs, ... }:
+{ config, pkgs, ... }: 
 {
-  xdg.configFile."wezterm/wezterm.lua".source = config.lib.file.mkOutOfStoreSymlink "/home/user/nix-config/dotfiles/wezterm/wezterm.lua";
+  xdg.configFile."nvim".source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/nix-config/dotfiles/nvim";
+  xdg.configFile."wezterm".source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/nix-config/dotfiles/wezterm";
 }
