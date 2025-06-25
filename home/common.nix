@@ -1,5 +1,8 @@
-{ config, pkgs, ... }:
 {
+  config,
+  pkgs,
+  ...
+}: {
   home.packages = with pkgs; [
     anki
     bunnyfetch
@@ -21,16 +24,16 @@
     gopeed
     hyfetch
     hyprland
-		imagemagick
+    imagemagick
     just
-		lazygit
+    lazygit
     lolcat
     lua51Packages.lua
     lua54Packages.luarocks
     mat2
     mullvad-browser
     neofetch
-    nitch
+    niche
     nodejs_24
     ollama
     pfetch
@@ -49,7 +52,7 @@
     tty-clock
     ungoogled-chromium
     unzip
-		ueberzugpp
+    ueberzugpp
     virtualbox
     vlc
     waydroid
@@ -57,6 +60,12 @@
     wezterm
     yarn
     yt-dlp
+
+    # neovim lsps, temporary fix until i fix how programs.neovim.extraPackages works
+    alejandra
+    codespell
+    prettierd
+    stylua
   ];
   programs.kitty.enable = true;
 }
