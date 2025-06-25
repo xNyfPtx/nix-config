@@ -1,2 +1,2 @@
-vim.cmd('colorscheme catppuccin-mocha')
-vim.cmd('set number')
+vim.cmd("colorscheme catppuccin-mocha")
+vim.cmd("set number")

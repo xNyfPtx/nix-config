@@ -3,5 +3,5 @@ return {
 	build = false,
 	opts = {
 		processor = "magick_cli",
-	}
+	},
 }

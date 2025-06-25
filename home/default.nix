@@ -1,5 +1,8 @@
-{ config, pkgs, ... }:
 {
+  config,
+  pkgs,
+  ...
+}: {
   imports = [
     ./bash.nix
     ./common.nix
@@ -7,7 +10,7 @@
     ./git.nix
     ./gnome.nix
     ./librewolf.nix
-		./neovim.nix
+    ./neovim.nix
   ];
 
   home = {

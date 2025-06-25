@@ -1,20 +1,23 @@
-{ config, pkgs, ... }:
 {
+  config,
+  pkgs,
+  ...
+}: {
   programs.firefox = {
     enable = true;
     package = pkgs.librewolf;
     policies = {
       Cookies = {
         "Allow" = [
-	  "https://addy.io"
+          "https://addy.io"
           "https://element.io"
-	  "https://discord.com"
-	  "https://facebook.com"
+          "https://discord.com"
+          "https://facebook.com"
           "https://frontendmentor.io"
           "https://github.com"
-	  "https://lemmy.cafe"
-	  "https://mastodon.social"
-	  "https://proton.me"
+          "https://lemmy.cafe"
+          "https://mastodon.social"
+          "https://proton.me"
         ];
         "Locked" = true;
       };
@@ -26,8 +29,8 @@
         "{8446b178-c865-4f5c-8ccc-1d7887811ae3}" = {
           install_url = "https://addons.mozilla.org/firefox/downloads/latest/catppuccin-mocha-lavender-git/latest.xpi";
           installation_mode = "force_installed";
-	};
-        # LibRedirect 
+        };
+        # LibRedirect
         "7esoorv3@alefvanoon.anonaddy.me" = {
           install_url = "https://addons.mozilla.org/firefox/downloads/latest/libredirect/latest.xpi";
           installation_mode = "force_installed";
@@ -58,7 +61,7 @@
         "browser.urlbar.suggest.openpage" = false;
         "browser.urlbar.suggest.recentsearches" = false;
         "browser.urlbar.suggest.topsites" = false;
-	"browser.warnOnQuit" = false;
+        "browser.warnOnQuit" = false;
         "browser.warnOnQuitShortcut" = false;
         "places.history.enabled" = "false";
         "privacy.resistFingerprinting" = true;
@@ -67,4 +70,3 @@
     };
   };
 }
-

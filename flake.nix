@@ -14,7 +14,12 @@
     };
   };
 
-  outputs = inputs@{ self, nixpkgs, home-manager, ... }: {
+  outputs = inputs @ {
+    self,
+    nixpkgs,
+    home-manager,
+    ...
+  }: {
     nixosConfigurations = {
       # TODO please change the hostname to your own
       host = nixpkgs.lib.nixosSystem {
@@ -31,7 +36,7 @@
 
             # TODO replace ryan with your own username
             home-manager.users.user = import ./home;
-	    home-manager.extraSpecialArgs = { inherit inputs self;};
+            home-manager.extraSpecialArgs = {inherit inputs self;};
 
             # Optionally, use home-manager.extraSpecialArgs to pass arguments to home.nix
           }

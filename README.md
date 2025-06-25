@@ -1,7 +1,6 @@
-
 # About
 
-This repo contains my NixOS configuration. It is still in progress as I am still learning about NixOS. 
+This repo contains my NixOS configuration. It is still in progress as I am still learning about NixOS.
 
 # Usage
 
@@ -18,5 +17,3 @@ sudo nixos-rebuild switch --flake .#host
 ```
 
 That's it! You can run commands from `justfile` also.
-
-
