@@ -33,7 +33,7 @@
     mat2
     mullvad-browser
     neofetch
-    nitch
+    niche
     nodejs_24
     ollama
     pfetch
@@ -60,12 +60,6 @@
     wezterm
     yarn
     yt-dlp
-
-    # neovim lsps, temporary fix until i fix how programs.neovim.extraPackages works
-    alejandra
-    codespell
-    prettierd
-    stylua
   ];
   programs.kitty.enable = true;
 }
