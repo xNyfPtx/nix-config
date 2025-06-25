@@ -10,7 +10,6 @@
     cava
     cbonsai
     cmatrix
-    cowsay
     ente-auth
     eyedropper
     ffmpeg
