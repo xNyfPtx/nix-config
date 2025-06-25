@@ -13,9 +13,8 @@
     cowsay
     ente-auth
     eyedropper
-    fastfetch
-    fd
     ffmpeg
+    fastfetch
     figlet
     gh
     git
@@ -24,7 +23,6 @@
     gopeed
     hyfetch
     hyprland
-    imagemagick
     just
     lazygit
     lolcat
@@ -32,14 +30,10 @@
     lua54Packages.luarocks
     mat2
     mullvad-browser
-    neofetch
-    niche
     nodejs_24
     ollama
-    pfetch
     pinta
     pnpm_9
-    ponysay
     protonvpn-gui
     pwgen
     qbittorrent
