@@ -6,6 +6,12 @@
   programs.neovim = {
     enable = true;
     extraLuaPackages = ps: [ps.magick];
-    extraPackages = [pkgs.imagemagick];
+    extraPackages = with pkgs; [
+      alejandra
+      codespell
+      prettierd
+      stylua
+      imagemagick
+    ];
   };
 }
