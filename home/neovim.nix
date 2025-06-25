@@ -9,6 +9,7 @@
     extraPackages = with pkgs; [
       alejandra
       codespell
+      fd
       prettierd
       stylua
       imagemagick
