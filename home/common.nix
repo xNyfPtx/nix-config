@@ -33,7 +33,7 @@
     mat2
     mullvad-browser
     neofetch
-    niche
+    nitch
     nodejs_24
     ollama
     pfetch
