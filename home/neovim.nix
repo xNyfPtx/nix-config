@@ -10,9 +10,11 @@
       alejandra
       codespell
       fd
+      gnumake
+      imagemagick
       prettierd
       stylua
-      imagemagick
+      ueberzugpp
     ];
   };
 }
