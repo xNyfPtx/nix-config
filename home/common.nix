@@ -45,7 +45,6 @@
     tty-clock
     ungoogled-chromium
     unzip
-    ueberzugpp
     virtualbox
     vlc
     waydroid
