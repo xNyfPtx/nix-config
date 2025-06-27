@@ -9,6 +9,7 @@
     extraPackages = with pkgs; [
       alejandra
       codespell
+      emmet-language-server
       fd
       gnumake
       imagemagick
