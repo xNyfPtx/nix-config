@@ -18,11 +18,12 @@
       stylua
       tailwindcss-language-server
       ueberzugpp
-      vimPlugins.nvim-treesitter-parsers.html
-      vimPlugins.nvim-treesitter-parsers.css
-      vimPlugins.nvim-treesitter-parsers.typescript
-      vimPlugins.nvim-treesitter-parsers.javascript
       zig
+    ];
+    plugins = with pkgs.vimPlugins; [
+      nvim-treesitter.html
+      nvim-treesitter.css
+      nvim-treesitter.tsx
     ];
   };
 }
