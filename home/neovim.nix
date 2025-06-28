@@ -16,6 +16,10 @@
       prettierd
       stylua
       ueberzugpp
+      vimPlugins.nvim-treesitter-parsers.html
+      vimPlugins.nvim-treesitter-parsers.css
+      vimPlugins.nvim-treesitter-parsers.typescript
+      vimPlugins.nvim-treesitter-parsers.javascript
     ];
   };
 }
