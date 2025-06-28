@@ -13,6 +13,7 @@
       fd
       gnumake
       imagemagick
+      neovim-node-client
       prettierd
       stylua
       tailwindcss-language-server
