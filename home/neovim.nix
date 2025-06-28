@@ -21,9 +21,7 @@
       zig
     ];
     plugins = with pkgs.vimPlugins; [
-      nvim-treesitter.html
-      nvim-treesitter.css
-      nvim-treesitter.tsx
+      nvim-treesitter.withAllGrammars
     ];
   };
 }
