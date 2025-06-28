@@ -9,12 +9,8 @@
     extraPackages = with pkgs; [
       alejandra
       codespell
-      cc
-      cl
-      clang
       emmet-language-server
       fd
-      gcc
       gnumake
       imagemagick
       neovim-node-client
