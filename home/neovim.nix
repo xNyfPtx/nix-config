@@ -15,6 +15,7 @@
       imagemagick
       prettierd
       stylua
+      tailwindcss-language-server
       ueberzugpp
       vimPlugins.nvim-treesitter-parsers.html
       vimPlugins.nvim-treesitter-parsers.css
