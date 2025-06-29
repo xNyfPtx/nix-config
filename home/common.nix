@@ -30,6 +30,7 @@
     mat2
     mullvad-browser
     nodejs_24
+    nodePackages_latest.browser-sync
     ollama
     pinta
     pnpm_9
