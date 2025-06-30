@@ -11,6 +11,7 @@ config.use_fancy_tab_bar = false
 config.enable_tab_bar = true
 config.show_tab_index_in_tab_bar = true
 config.tab_max_width = 50
+config.warn_about_missing_glyphs = false
 
 config.skip_close_confirmation_for_processes_named = {
 	"bash",
