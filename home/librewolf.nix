@@ -12,11 +12,8 @@
           "https://addy.io"
           "https://element.io"
           "https://discord.com"
-          "https://facebook.com"
-          "https://frontendmentor.io"
           "https://github.com"
           "https://lemmy.cafe"
-          "https://mastodon.social"
           "https://proton.me"
         ];
         "Locked" = true;
