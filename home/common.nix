@@ -19,6 +19,7 @@
     git
     gitea
     gnome-boxes
+    gnome-sound-recorder
     gopeed
     hyfetch
     hyprland
