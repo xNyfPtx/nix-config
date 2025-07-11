@@ -12,6 +12,7 @@
     ./networking.nix
     ./nix.nix
     ./pipewire.nix
+    ./time.nix
     ./users.nix
     ./xserver.nix
   ];
