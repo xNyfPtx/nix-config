@@ -11,6 +11,7 @@
     ./gnome.nix
     ./librewolf.nix
     ./neovim.nix
+    ./thefuck.nix
   ];
 
   home = {
