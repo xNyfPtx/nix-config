@@ -45,43 +45,46 @@ vim.keymap.set({ "n", "v" }, "<leader>mp", function()
 	})
 end)
 
+-- cjodo/convert.nvim
+map("n", "<leader>cn", "<cmd>ConvertFindNext<CR>")
+map("n", "<leader>cc", "<cmd>ConvertFindCurrent<CR>")
+map({ "n", "v" }, "<leader>ca", "<cmd>ConvertAll<CR>")
+
 -- romgrk/barbar.nvim
 
-local opts = { noremap = true, silent = true }
-
 -- romgrk/barbar.nvim | Move to previous/next
-map("n", "<A-,>", "<Cmd>BufferPrevious<CR>", opts)
-map("n", "<A-.>", "<Cmd>BufferNext<CR>", opts)
+map("n", "<A-,>", "<Cmd>BufferPrevious<CR>", { noremap = true, silent = true })
+map("n", "<A-.>", "<Cmd>BufferNext<CR>", { noremap = true, silent = true })
 
 -- romgrk/barbar.nvim | Re-order to previous/next
-map("n", "<A-<>", "<Cmd>BufferMovePrevious<CR>", opts)
-map("n", "<A->>", "<Cmd>BufferMoveNext<CR>", opts)
+map("n", "<A-<>", "<Cmd>BufferMovePrevious<CR>", { noremap = true, silent = true })
+map("n", "<A->>", "<Cmd>BufferMoveNext<CR>", { noremap = true, silent = true })
 
 -- romgrk/barbar.nvim | Goto buffer in position...
-map("n", "<A-1>", "<Cmd>BufferGoto 1<CR>", opts)
-map("n", "<A-2>", "<Cmd>BufferGoto 2<CR>", opts)
-map("n", "<A-3>", "<Cmd>BufferGoto 3<CR>", opts)
-map("n", "<A-4>", "<Cmd>BufferGoto 4<CR>", opts)
-map("n", "<A-5>", "<Cmd>BufferGoto 5<CR>", opts)
-map("n", "<A-6>", "<Cmd>BufferGoto 6<CR>", opts)
-map("n", "<A-7>", "<Cmd>BufferGoto 7<CR>", opts)
-map("n", "<A-8>", "<Cmd>BufferGoto 8<CR>", opts)
-map("n", "<A-9>", "<Cmd>BufferGoto 9<CR>", opts)
-map("n", "<A-0>", "<Cmd>BufferLast<CR>", opts)
+map("n", "<A-1>", "<Cmd>BufferGoto 1<CR>", { noremap = true, silent = true })
+map("n", "<A-2>", "<Cmd>BufferGoto 2<CR>", { noremap = true, silent = true })
+map("n", "<A-3>", "<Cmd>BufferGoto 3<CR>", { noremap = true, silent = true })
+map("n", "<A-4>", "<Cmd>BufferGoto 4<CR>", { noremap = true, silent = true })
+map("n", "<A-5>", "<Cmd>BufferGoto 5<CR>", { noremap = true, silent = true })
+map("n", "<A-6>", "<Cmd>BufferGoto 6<CR>", { noremap = true, silent = true })
+map("n", "<A-7>", "<Cmd>BufferGoto 7<CR>", { noremap = true, silent = true })
+map("n", "<A-8>", "<Cmd>BufferGoto 8<CR>", { noremap = true, silent = true })
+map("n", "<A-9>", "<Cmd>BufferGoto 9<CR>", { noremap = true, silent = true })
+map("n", "<A-0>", "<Cmd>BufferLast<CR>", { noremap = true, silent = true })
 
 -- romgrk/barbar.nvim | Pin/unpin buffer
-map("n", "<A-p>", "<Cmd>BufferPin<CR>", opts)
+map("n", "<A-p>", "<Cmd>BufferPin<CR>", { noremap = true, silent = true })
 
 -- romgrk/barbar.nvim | Close buffer
-map("n", "<A-c>", "<Cmd>BufferClose<CR>", opts)
+map("n", "<A-c>", "<Cmd>BufferClose<CR>", { noremap = true, silent = true })
 
 -- romgrk/barbar.nvim | Magic buffer-picking mode
-map("n", "<C-p>", "<Cmd>BufferPick<CR>", opts)
-map("n", "<C-s-p>", "<Cmd>BufferPickDelete<CR>", opts)
+map("n", "<C-p>", "<Cmd>BufferPick<CR>", { noremap = true, silent = true })
+map("n", "<C-s-p>", "<Cmd>BufferPickDelete<CR>", { noremap = true, silent = true })
 
 -- romgrk/barbar.nvim | Sort automatically by...
-map("n", "<Space>bb", "<Cmd>BufferOrderByBufferNumber<CR>", opts)
-map("n", "<Space>bn", "<Cmd>BufferOrderByName<CR>", opts)
-map("n", "<Space>bd", "<Cmd>BufferOrderByDirectory<CR>", opts)
-map("n", "<Space>bl", "<Cmd>BufferOrderByLanguage<CR>", opts)
-map("n", "<Space>bw", "<Cmd>BufferOrderByWindowNumber<CR>", opts)
+map("n", "<Space>bb", "<Cmd>BufferOrderByBufferNumber<CR>", { noremap = true, silent = true })
+map("n", "<Space>bn", "<Cmd>BufferOrderByName<CR>", { noremap = true, silent = true })
+map("n", "<Space>bd", "<Cmd>BufferOrderByDirectory<CR>", { noremap = true, silent = true })
+map("n", "<Space>bl", "<Cmd>BufferOrderByLanguage<CR>", { noremap = true, silent = true })
+map("n", "<Space>bw", "<Cmd>BufferOrderByWindowNumber<CR>", { noremap = true, silent = true })
