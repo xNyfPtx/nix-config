@@ -18,7 +18,6 @@
         ];
         "Locked" = true;
       };
-      DisableBuiltinPDFViewer = true;
       DisableTelemetry = true;
       DisableFirefoxStudies = true;
       ExtensionSettings = {
