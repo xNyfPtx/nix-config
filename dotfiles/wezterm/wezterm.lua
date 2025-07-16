@@ -1,82 +1,60 @@
--- Pull in the wezterm API
 local wezterm = require("wezterm")
-
--- This will hold the configuration.
 local config = wezterm.config_builder()
 
+local catppuccin = {
+	base = "hsl(240, 21%, 15%)",
+	surface0 = "hsl(237, 16%, 23%)",
+	surface1 = "hsl(234, 13%, 31%)",
+	text = "hsl(226, 64%, 88%)",
+}
+
 config.color_scheme = "catppuccin-mocha"
-config.window_decorations = "NONE"
-config.window_close_confirmation = "NeverPrompt"
-config.use_fancy_tab_bar = false
-config.enable_tab_bar = true
-config.show_tab_index_in_tab_bar = true
-config.tab_max_width = 50
-config.warn_about_missing_glyphs = false
-
-config.skip_close_confirmation_for_processes_named = {
-	"bash",
-	"sh",
-	"zsh",
-	"fish",
-	"tmux",
-	"nu",
-	"cmd.exe",
-	"pwsh.exe",
-	"powershell.exe",
-	"nvim",
-	"ollama",
-}
-
-local catpuccin_colors = {
-	text = "#cdd6f4",
-	surface1 = "#45475a",
-	surface0 = "#313244",
-	base = "#1e1d2d",
-}
-
 config.colors = {
+	cursor_bg = "#999999",
 	tab_bar = {
-		background = catpuccin_colors.base,
+		background = catppuccin.base,
 
 		active_tab = {
-			bg_color = catpuccin_colors.surface1,
-			fg_color = catpuccin_colors.text,
-			intensity = "Bold",
-			underline = "None",
-			italic = true,
-			strikethrough = false,
+			bg_color = catppuccin.surface1,
+			fg_color = catppuccin.text,
 		},
 
 		inactive_tab = {
-			bg_color = catpuccin_colors.base,
-			fg_color = catpuccin_colors.text,
-			intensity = "Normal",
-			underline = "None",
-			italic = false,
-			strikethrough = false,
+			bg_color = catppuccin.base,
+			fg_color = catppuccin.text,
 		},
 
 		inactive_tab_hover = {
-			bg_color = catpuccin_colors.surface0,
-			fg_color = catpuccin_colors.text,
-			intensity = "Normal",
-			underline = "None",
-			italic = false,
-			strikethrough = false,
+			bg_color = catppuccin.surface0,
+			fg_color = catppuccin.text,
 		},
 
 		new_tab = {
-			bg_color = catpuccin_colors.base,
-			fg_color = catpuccin_colors.text,
+			bg_color = catppuccin.base,
+			fg_color = catppuccin.text,
 		},
 
 		new_tab_hover = {
-			bg_color = catpuccin_colors.surface0,
-			fg_color = catpuccin_colors.text,
-			italic = true,
+			bg_color = catppuccin.surface0,
+			fg_color = catppuccin.text,
 		},
 	},
 }
+config.enable_tab_bar = true
+config.keys = {
+	{
+		key = "w",
+		mods = "CTRL|SHIFT",
+		action = wezterm.action.CloseCurrentTab({ confirm = false }),
+	},
+}
+config.tab_max_width = 50
+config.use_fancy_tab_bar = false
+config.window_close_confirmation = "NeverPrompt"
+config.warn_about_missing_glyphs = false
 
--- and finally, return the configuration to wezterm
+wezterm.on("mux-is-process-stateful", function(_proc)
+	return false
+end)
+
 return config
