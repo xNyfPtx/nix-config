@@ -40,7 +40,7 @@ map("n", "<leader>e", "<cmd>NvimTreeFocus<cr>")
 map("n", "<leader>lg", "<cmd>LazyGit<cr>")
 
 -- nvzone/floaterm
-map({ "n", "t" }, "<C-;>", "<cmd>FloatermToggle<cr>")
+map({ "n", "t" }, "<A-i>", "<cmd>FloatermToggle<cr>")
 
 -- stevearc/conform.nvim
 vim.keymap.set({ "n", "v" }, "<leader>mp", function()
