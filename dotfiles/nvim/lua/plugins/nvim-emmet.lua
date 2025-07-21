@@ -1,8 +1,6 @@
 return {
 	"olrtg/nvim-emmet",
 	config = function()
-		vim.keymap.set({ "n", "v" }, "<leader>xe", require("nvim-emmet").wrap_with_abbreviation)
-
 		vim.api.nvim_create_autocmd({ "FileType" }, {
 			pattern = "css,eruby,html,htmldjango,javascriptreact,less,pug,sass,scss,typescriptreact",
 			callback = function()
