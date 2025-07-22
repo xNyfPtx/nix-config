@@ -3,4 +3,9 @@ return {
 	dependencies = {
 		"MunifTanjim/nui.nvim",
 	},
+	cmd = {
+		"ConvertFindNext",
+		"ConvertFindCurrent",
+		"ConvertFindAll",
+	},
 }
