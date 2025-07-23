@@ -8,4 +8,5 @@ return {
 		"neovim/nvim-lspconfig",
 	},
 	opts = {},
+	ft = "html",
 }
