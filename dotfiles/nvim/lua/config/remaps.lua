@@ -27,7 +27,7 @@ map({ "n", "v" }, "<leader>ca", "<cmd>ConvertAll<cr>")
 map({ "n", "t" }, "<A-i>", "<cmd>FloatermToggle<cr>")
 
 -- kdheepak/lazygit.nvim
-map("n", "<leader>lg", "<cmd>LazyGit<cr>")
+map("n", "<leader>l", "<cmd>LazyGit<cr>")
 
 -- jake-stewart/multicursor.nvim
 map({ "n", "x" }, "<up>", function()
