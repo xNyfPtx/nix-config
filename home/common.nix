@@ -16,6 +16,7 @@
     gnome-boxes
     gnome-sound-recorder
     just
+    kooha
     lazygit
     lua51Packages.lua
     lua54Packages.luarocks
@@ -35,7 +36,6 @@
     tor-browser
     unzip
     vlc
-    wayfarer
     wezterm
     yarn
     yt-dlp
