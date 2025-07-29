@@ -5,51 +5,36 @@
 }: {
   home.packages = with pkgs; [
     anki
-    bunnyfetch
-    calibre
-    cava
-    cbonsai
-    cmatrix
+    bitwarden-desktop
     ente-auth
     eyedropper
     ffmpeg
     fastfetch
-    figlet
     gh
     git
     gitea
     gnome-boxes
     gnome-sound-recorder
-    gopeed
-    hyfetch
-    hyprland
     just
     lazygit
-    lolcat
     lua51Packages.lua
     lua54Packages.luarocks
     mat2
     mullvad-browser
     nodejs_24
     nodePackages_latest.browser-sync
-    ollama
     pinta
-    pnpm_9
+    pnpm
     protonvpn-gui
     pwgen
-    qbittorrent
     ripgrep
     sass
     smassh
     songrec
     simplex-chat-desktop
     tor-browser
-    tty-clock
-    ungoogled-chromium
     unzip
-    virtualbox
     vlc
-    waydroid
     wayfarer
     wezterm
     yarn
