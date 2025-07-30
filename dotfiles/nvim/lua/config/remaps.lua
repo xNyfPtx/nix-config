@@ -29,14 +29,14 @@ map("n", "<leader>l", "<cmd>LazyGit<cr>", { desc = "Lazygit" })
 -- jake-stewart/multicursor.nvim
 map({ "n", "x" }, "<up>", function()
 	require("multicursor-nvim").lineAddCursor(-1)
-end)
+end, { desc = "Add cursor on current line and move up" })
 map({ "n", "x" }, "<down>", function()
 	require("multicursor-nvim").lineAddCursor(1)
-end)
-map({ "n", "x" }, "<c-q>", require("multicursor-nvim").toggleCursor)
+end, { desc = "Add cursor on current line and move down" })
+map({ "n", "x" }, "<c-q>", require("multicursor-nvim").toggleCursor, { desc = "Add cursor under main cursor" })
 
 -- olrtg/nvim-emmet.lua
-map({ "n", "v" }, "<leader>xe", require("nvim-emmet").wrap_with_abbreviation)
+map({ "n", "v" }, "<leader>xe", require("nvim-emmet").wrap_with_abbreviation, { desc = "Wrap line with Emmet" })
 
 -- chrisgrieser/nvim-spider
 map({ "n", "o", "x" }, "w", "<cmd>lua require('spider').motion('w')<cr>")
@@ -44,18 +44,31 @@ map({ "n", "o", "x" }, "e", "<cmd>lua require('spider').motion('e')<cr>")
 map({ "n", "o", "x" }, "b", "<cmd>lua require('spider').motion('b')<cr>")
 
 -- nvim-tree/nvim-tree.lua
-map("n", "<C-n>", "<cmd>NvimTreeToggle<cr>")
-map("n", "<leader>e", "<cmd>NvimTreeFocus<cr>")
+map("n", "<C-n>", "<cmd>NvimTreeToggle<cr>", { desc = "Toggle tree" })
+map("n", "<leader>e", "<cmd>NvimTreeFocus<cr>", { desc = "Focus on tree" })
 
 -- nvim-telescope/telescope.nvim
-map("n", "<leader>fa", "<cmd>Telescope find_files follow=true no_ignore=true hidden=true<cr>")
-map("n", "<leader>ff", "<cmd>Telescope find_files<cr>")
-map("n", "<leader>fw", "<cmd>Telescope live_grep<cr>")
-map("n", "<leader>fh", "<cmd>Telescope help_tags<cr>")
-map("n", "<leader>fz", "<cmd>Telescope current_buffer_fuzzy_find<cr>")
+map(
+	"n",
+	"<leader>fa",
+	"<cmd>Telescope find_files follow=true no_ignore=true hidden=true<cr>",
+	{ desc = "Find all files with Telescope" }
+)
+map("n", "<leader>ff", "<cmd>Telescope find_files<cr>", { desc = "Find files with Telescope" })
+map("n", "<leader>fw", "<cmd>Telescope live_grep<cr>", { desc = "Find string with Telescope" })
+map("n", "<leader>fh", "<cmd>Telescope help_tags<cr>", { desc = "Find help tags with Telescope" })
+map(
+	"n",
+	"<leader>fz",
+	"<cmd>Telescope current_buffer_fuzzy_find<cr>",
+	{ desc = "Find string in current buffer with Telescope" }
+)
 
 -- Wansmer/treesj
-map("n", "<leader>m", "<cmd>TSJToggle<cr>")
+map("n", "<leader>m", "<cmd>TSJToggle<cr>", { desc = "Split/join code under cursor" })
 
 -- folke/which-key.nvim
-map("n", "<leader>?", "<cmd>WhichKey<cr>")
+map("n", "<leader>wK", "<cmd>WhichKey<cr>", { desc = "Show all keymaps" })
+map("n", "<leader>wk", function()
+	vim.cmd("WhichKey " .. vim.fn.input("WhichKey: "))
+end, { desc = "Find keymaps" })
