@@ -53,16 +53,11 @@ map("n", "<leader>e", "<cmd>NvimTreeFocus<cr>")
 -- nvim-telescope/telescope.nvim
 map("n", "<leader>ff", "<cmd>Telescope find_files<cr>")
 map("n", "<leader>fw", "<cmd>Telescope live_grep<cr>")
-map("n", "<leader>fb", "<cmd>Telescope buffers<cr>")
 map("n", "<leader>fh", "<cmd>Telescope help_tags<cr>")
-map("n", "<leader>ma", "<cmd>Telescope marks<cr>")
-map("n", "<leader>fo", "<cmd>Telescope oldfiles<cr>")
 map("n", "<leader>fz", "<cmd>Telescope current_buffer_fuzzy_find<cr>")
-map("n", "<leader>cm", "<cmd>Telescope git_commits<cr>")
-map("n", "<leader>gt", "<cmd>Telescope git_status<cr>")
-map("n", "<leader>pt", "<cmd>Telescope terms<cr>")
+
+-- Wansmer/treesj
+map("n", "<leader>m", "<cmd>TSJToggle<cr>")
 
 -- folke/which-key.nvim
-map("n", "<leader>?", function()
-	require("which-key").show({ global = false })
-end)
+map("n", "<leader>?", "<cmd>WhichKey<cr>")
