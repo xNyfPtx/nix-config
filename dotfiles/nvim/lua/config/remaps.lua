@@ -14,20 +14,17 @@ map("n", "<C-s>", "<cmd>w<cr>", { desc = "Save file" })
 map("t", "<C-x>", "<C-\\><C-N>", { desc = "Escape terminal mode" })
 
 -- romgrk/barbar.nvim
-map("n", "<A-,>", "<cmd>BufferPrevious<cr>", { noremap = true, silent = true })
-map("n", "<A-.>", "<cmd>BufferNext<cr>", { noremap = true, silent = true })
-map("n", "<A-c>", "<cmd>BufferClose<cr>", { noremap = true, silent = true })
+map("n", "<A-,>", "<cmd>BufferPrevious<cr>", { desc = "Go to previous buffer", noremap = true, silent = true })
+map("n", "<A-.>", "<cmd>BufferNext<cr>", { desc = "Go to next buffer", noremap = true, silent = true })
+map("n", "<A-c>", "<cmd>BufferClose<cr>", { desc = "Close current buffer", noremap = true, silent = true })
 
 -- cjodo/convert.nvim
-map("n", "<leader>cn", "<cmd>ConvertFindNext<cr>")
-map("n", "<leader>cc", "<cmd>ConvertFindCurrent<cr>")
-map({ "n", "v" }, "<leader>ca", "<cmd>ConvertAll<cr>")
-
--- nvzone/floaterm
-map({ "n", "t" }, "<A-i>", "<cmd>FloatermToggle<cr>")
+map("n", "<leader>cn", "<cmd>ConvertFindNext<cr>", { desc = "Convert next unit" })
+map("n", "<leader>cc", "<cmd>ConvertFindCurrent<cr>", { desc = "Convert unit in current line" })
+map({ "n", "v" }, "<leader>ca", "<cmd>ConvertAll<cr>", { desc = "Convert all units" })
 
 -- kdheepak/lazygit.nvim
-map("n", "<leader>l", "<cmd>LazyGit<cr>")
+map("n", "<leader>l", "<cmd>LazyGit<cr>", { desc = "Lazygit" })
 
 -- jake-stewart/multicursor.nvim
 map({ "n", "x" }, "<up>", function()
@@ -51,6 +48,7 @@ map("n", "<C-n>", "<cmd>NvimTreeToggle<cr>")
 map("n", "<leader>e", "<cmd>NvimTreeFocus<cr>")
 
 -- nvim-telescope/telescope.nvim
+map("n", "<leader>fa", "<cmd>Telescope find_files follow=true no_ignore=true hidden=true<cr>")
 map("n", "<leader>ff", "<cmd>Telescope find_files<cr>")
 map("n", "<leader>fw", "<cmd>Telescope live_grep<cr>")
 map("n", "<leader>fh", "<cmd>Telescope help_tags<cr>")
