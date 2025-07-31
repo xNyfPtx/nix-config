@@ -15,6 +15,7 @@
     gitea
     gnome-boxes
     gnome-sound-recorder
+    jq
     just
     kooha
     lazygit
