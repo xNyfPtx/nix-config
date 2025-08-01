@@ -4,7 +4,6 @@
   ...
 }: {
   home.packages = with pkgs; [
-    anki
     bitwarden-desktop
     ente-auth
     eyedropper
@@ -12,7 +11,6 @@
     fastfetch
     gh
     git
-    gitea
     gnome-boxes
     gnome-sound-recorder
     jq
@@ -24,14 +22,11 @@
     mat2
     mullvad-browser
     nodejs_24
-    nodePackages_latest.browser-sync
     pinta
     pnpm
     protonvpn-gui
     pwgen
     ripgrep
-    sass
-    smassh
     songrec
     simplex-chat-desktop
     tor-browser
