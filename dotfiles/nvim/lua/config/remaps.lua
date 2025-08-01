@@ -38,11 +38,6 @@ map({ "n", "x" }, "<c-q>", require("multicursor-nvim").toggleCursor, { desc = "A
 -- olrtg/nvim-emmet.lua
 map({ "n", "v" }, "<leader>xe", require("nvim-emmet").wrap_with_abbreviation, { desc = "Wrap line with Emmet" })
 
--- chrisgrieser/nvim-spider
-map({ "n", "o", "x" }, "w", "<cmd>lua require('spider').motion('w')<cr>")
-map({ "n", "o", "x" }, "e", "<cmd>lua require('spider').motion('e')<cr>")
-map({ "n", "o", "x" }, "b", "<cmd>lua require('spider').motion('b')<cr>")
-
 -- nvim-tree/nvim-tree.lua
 map("n", "<C-n>", "<cmd>NvimTreeToggle<cr>", { desc = "Toggle tree" })
 map("n", "<leader>e", "<cmd>NvimTreeFocus<cr>", { desc = "Focus on tree" })
