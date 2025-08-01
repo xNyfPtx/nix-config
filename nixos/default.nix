@@ -11,6 +11,7 @@
     ./keyd.nix
     ./networking.nix
     ./nix.nix
+    ./ollama.nix
     ./pipewire.nix
     ./time.nix
     ./users.nix
